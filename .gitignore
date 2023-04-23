@@ -1,8 +1,10 @@
 # History files
+.Rproj.user
 .Rhistory
 .Rapp.history
 
 # Session Data files
+.Rprofile
 .RData
 .RDataTmp
 
@@ -47,3 +49,8 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+temp/
+mlruns/
+data/
+renv/.gitignore
+*.bin
