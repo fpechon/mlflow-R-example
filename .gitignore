@@ -51,7 +51,6 @@ po/*~
 rsconnect/
 temp/
 mlruns/
-data/
 renv/.gitignore
 *.bin
 
