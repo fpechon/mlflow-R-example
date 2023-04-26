@@ -19,9 +19,11 @@ http://<IPV4 DNS>:5000
 
 5. You need to have access to S3 from your laptop/PC. For that, you will need to install AWS CLI (https://aws.amazon.com/fr/cli/).
 6. when installed, you can configure by going into cmd and typing
+
 ```
 aws configure
 ```
+
 Use your user's credential (access and secret key) and you should be good to go.
 7. You need to have python installed on your laptop, and have mlflow installed as well (python package).
 8. In R, you also need to install mlflow.
@@ -31,3 +33,6 @@ Sys.setenv(MLFLOW_TRACKING_URI="http://<IPV4 DNS>:5000")
 ```
 10. Create an experiment in mlflow ui.
 11. Enjoy.
+
+
+PS: If may need to create a "temp" folder to store the temp files (like partial dependencies) before they are sent to s3.
