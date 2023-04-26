@@ -1,0 +1,14 @@
+name: GBM
+
+
+entry_points:
+  main:
+    parameters:
+      n_trees: {type: int , default : 10}
+      interaction_depth : {type: int , default : 10}
+      n_minobsinnode : {type: int , default : 10}
+      shrinkage : {type: float , default : 0.01}
+      bag_fraction : {type: float , default : 0.50} 
+      train_fraction : {type: float , default : 1}
+      objective : {type: string, default : 'poisson'}
+    command: "Rscript gbm.R -P n_trees={n_trees} interaction_depth={interaction_depth} n_minobsinnode={n_minobsinnode} shrinkage={shrinkage} bag_fraction={bag_fraction} train_fraction={train_fraction} objective={objective}"
